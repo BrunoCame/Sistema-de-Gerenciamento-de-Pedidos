@@ -1,0 +1,89 @@
+:host {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 24px 0 24px;
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile-container {
+    border-radius: 8px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+    label {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      color: #fff;
+      font-weight: 400;
+      font-size: 18px;
+      padding-bottom: 5px;
+      line-height: 150%;
+      letter-spacing: -0.015em;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      padding: 8px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      padding: 8px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  }
+
+  .divDialog {
+    background-color: #4f63a7;
+    box-sizing: border-box;
+  }
+
+  // p {
+  //   color: #fff;
+  // }
+
+  .nav-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1063px) {
+    .divDialog {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+}

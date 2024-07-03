@@ -1,0 +1,62 @@
+.sidenav-container {
+  background-color: white;
+  height: 81.5%;
+}
+
+.sidenav {
+  background-color: white;
+  width: 13%;
+}
+
+.sidenav-itens {
+  font-family: "Montserrat", sans-serif;
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.sidenav-itens:hover {
+  color: #183db7;
+}
+
+//Começo
+
+.matCard {
+  margin: 20px;
+}
+
+.botaoEditar {
+  margin-right: 10px;
+}
+
+.botaoExcluir {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3f6af6;
+  color: white;
+}
+
+.botaoEditar2 {
+  margin-right: 10px;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3f6af6;
+  color: white;
+}
+
+.botaoEditar2:hover {
+  background-color: rgb(102, 125, 239);
+}

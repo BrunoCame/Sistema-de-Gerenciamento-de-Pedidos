@@ -1,0 +1,54 @@
+<div class="divDialog">
+  <header>
+    <h2>Adicionar Produto</h2>
+  </header>
+
+  <mat-dialog-content style="padding: 0 0">
+    <form
+      class="profile-container"
+      [formGroup]="produtoForm"
+      (ngSubmit)="adicionarProduto()"
+    >
+      <label>Nome</label>
+      <input
+        matInput
+        placeholder="Nome do Produto"
+        formControlName="nome"
+        name="nome"
+        required
+      />
+
+      <label>Preço</label>
+      <input
+        matInput
+        placeholder="Preço do Produto"
+        name="preco"
+        formControlName="preco"
+        type="number"
+        required
+      />
+
+      <label>Descrição</label>
+      <textarea
+        matInput
+        name="descricao"
+        formControlName="descricao"
+        placeholder="Descrição do Produto"
+      ></textarea>
+
+      <label>Estoque</label>
+      <input
+        matInput
+        placeholder="Quantidade em Estoque"
+        type="number"
+        name="estoque"
+        formControlName="estoque"
+        required
+      />
+      <nav class="nav-btn">
+        <button class="btn" mat-button type="submit">Adicionar</button>
+        <button class="btn" mat-button mat-dialog-close>Cancelar</button>
+      </nav>
+    </form>
+  </mat-dialog-content>
+</div>

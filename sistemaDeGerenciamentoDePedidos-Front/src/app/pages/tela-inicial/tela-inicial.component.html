@@ -1,0 +1,71 @@
+<app-header [sidenav]="sidenav" />
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" #sidenav>
+    <mat-list>
+      <mat-list-item>
+        <a class="sidenav-itens" routerLink="/" (click)="sidenav.toggle()"
+          >Home</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/produtos"
+          (click)="sidenav.toggle()"
+          >Produtos</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/clientes"
+          (click)="sidenav.toggle()"
+          >Clientes</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/registro-pedidos"
+          routerLinkActive="active-link"
+          (click)="sidenav.toggle()"
+          >Meu Pedidos</a
+        >
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="div-botoes">
+      <div>
+        <button class="botao1" routerLink="/clientes">
+          Adicionar Clientes
+        </button>
+      </div>
+
+      <div>
+        <button class="botao2" routerLink="/produtos">
+          Adicionar Produtos
+        </button>
+      </div>
+
+      <div>
+        <button class="botao3" routerLink="/adicionar-pedido">
+          Adicionar Pedido
+        </button>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<app-footer />

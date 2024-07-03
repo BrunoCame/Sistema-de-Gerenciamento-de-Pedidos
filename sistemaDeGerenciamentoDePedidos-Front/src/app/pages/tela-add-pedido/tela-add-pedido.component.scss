@@ -1,0 +1,81 @@
+.sidenav-container {
+  background-color: white;
+  height: 81.5%;
+}
+
+.sidenav {
+  background-color: white;
+  width: 13%;
+}
+
+.sidenav-itens {
+  font-family: "Montserrat", sans-serif;
+  color: #111111;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.sidenav-itens:hover {
+  color: #183db7;
+}
+
+//Comeco
+
+.divPedido {
+  margin: 20px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 500px;
+
+  label {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+
+  input {
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+    border: 1px solid rgb(88, 88, 88);
+    font-size: 15px;
+  }
+
+  select {
+    padding: 15px;
+    border-radius: 5px;
+    width: 530px;
+    border: 1px solid rgb(88, 88, 88);
+    font-size: 15px;
+
+    option {
+      font-size: 15px;
+    }
+  }
+}
+
+.btn {
+  margin-top: 19px;
+  margin-left: 19px;
+  width: 485px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3f6af6;
+  color: white;
+}

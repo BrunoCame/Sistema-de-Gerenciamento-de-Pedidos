@@ -1,0 +1,92 @@
+<app-header [sidenav]="sidenav" />
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" #sidenav>
+    <mat-list>
+      <mat-list-item>
+        <a class="sidenav-itens" routerLink="/" (click)="sidenav.toggle()"
+          >Home</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/produtos"
+          (click)="sidenav.toggle()"
+          >Produtos</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/clientes"
+          (click)="sidenav.toggle()"
+          >Clientes</a
+        >
+      </mat-list-item>
+
+      <hr />
+
+      <mat-list-item>
+        <a
+          class="sidenav-itens"
+          routerLink="/registro-pedidos"
+          routerLinkActive="active-link"
+          (click)="sidenav.toggle()"
+          >Meu Pedidos</a
+        >
+      </mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="divPedido">
+      <h2>Cadastrar Pedido</h2>
+
+      <form
+        class="divForm"
+        [formGroup]="pedidoForm"
+        (ngSubmit)="adicionarPedido()"
+      >
+        <label for="">Selecione o Nome do Cliente</label>
+        <select name="" formControlName="idCliente" required>
+          <option value="" disabled>Selecione um Cliente</option>
+          <option
+            *ngFor="let clientes of listClientes"
+            [value]="clientes.idUsuario"
+          >
+            {{ clientes.nome }}
+          </option>
+        </select>
+
+        <label for="">Selecione o Produto</label>
+        <select name="" formControlName="idProduto" required>
+          <option value="" disabled>Selecione o Produto</option>
+          <option
+            *ngFor="let produtos of listProdutos"
+            [value]="produtos.idProduto"
+          >
+            {{ produtos.nome }}
+          </option>
+        </select>
+
+        <label for="">Quantidade</label>
+        <input
+          type="number"
+          placeholder="Selecione a quantidade"
+          formControlName="quantidade"
+        />
+
+        <button class="btn" type="submit">Gerar Pedido</button>
+      </form>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<app-footer />

@@ -1,0 +1,42 @@
+<div class="divDialog">
+  <header>
+    <h2>Adicionar Cliente</h2>
+  </header>
+
+  <mat-dialog-content style="padding: 0 0">
+    <form
+      class="profile-container"
+      [formGroup]="clienteForm"
+      (ngSubmit)="adicionarCliente()"
+    >
+      <label>Nome</label>
+      <input
+        matInput
+        placeholder="Nome do Cliente"
+        formControlName="nome"
+        required
+      />
+
+      <label>Email</label>
+      <input
+        matInput
+        placeholder="Email do Cliente"
+        formControlName="email"
+        required
+      />
+
+      <label>CPF</label>
+      <input
+        matInput
+        placeholder="CPF do Cliente"
+        required
+        formControlName="cpf"
+        mask="000.000.000-00"
+      />
+      <nav class="nav-btn">
+        <button class="btn" mat-button type="submit">Adicionar</button>
+        <button class="btn" mat-button mat-dialog-close>Cancelar</button>
+      </nav>
+    </form>
+  </mat-dialog-content>
+</div>
